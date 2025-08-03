@@ -26,15 +26,23 @@ class Scrape:
             for cell in cells:                   #loop through the list in the cells list (ie: text elements)
                 text = cell.text.strip()
                 row_text.append(text)
-                
+            
+            # Replace spaces with underscores in building name and room number for valid file path
+            building_formatted = row_text[0].replace(' ', '_')
+            room_formatted = row_text[1].replace(' ', '_')
+            image_name = f"/images/{building_formatted}_{room_formatted}.jpg"
             entry = {
                     'Building': row_text[0],
                     'Room Number': row_text[1],
                     'Seating Spaces': row_text[2],
                     'Group/Individual': row_text[3],
-                    'Type of space': row_text[4]
+                    'Type of space': row_text[4],
+                    'Image': image_name
                 }
             data["study_spaces"].append(entry)
 
         return data
     
+if __name__ == "__main__":
+    for i in range(len(Scrape.data()['study_spaces'])):
+        print(Scrape.data()['study_spaces'][i]['Image'])
