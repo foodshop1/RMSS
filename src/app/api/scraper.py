@@ -5,44 +5,53 @@ import json
 class Scrape:
     @staticmethod
     def data():
-        url = 'https://www.utsc.utoronto.ca/studentexperience/study-space'
-        response = requests.get(url)
+        try:
+            url = 'https://www.utsc.utoronto.ca/studentexperience/study-space'
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()
 
-        soup = BeautifulSoup(response.text, 'html.parser')
-
-
-        tables = soup.find_all('table') #returns list of all table tags 
-        data = {
-            "study_spaces" : []
-        }
-        count = 0
-
-        # print the first table's rows (tables[0] is the only table on the site, we use this just to be safe)
-
-        for row in tables[0].find_all('tr')[1:]: #loop through all of the rows of the table (exclude the first row bc its just the header)
-            count += 1
-            cells = row.find_all(['td'])         #find current row's td tags (text), returns list (note: includes html tags)
-            row_text = []                        # list to store all text elements in the row
-            for cell in cells:                   #loop through the list in the cells list (ie: text elements)
-                text = cell.text.strip()
-                row_text.append(text)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            tables = soup.find_all('table')
             
-            # Replace spaces with underscores in building name and room number for valid file path
-            building_formatted = row_text[0].replace(' ', '_')
-            room_formatted = row_text[1].replace(' ', '_')
-            image_name = f"/images/{building_formatted}_{room_formatted}.jpg"
-            entry = {
-                    'Building': row_text[0],
-                    'Room Number': row_text[1],
-                    'Seating Spaces': row_text[2],
-                    'Group/Individual': row_text[3],
-                    'Type of space': row_text[4],
-                    'Image': image_name
-                }
-            data["study_spaces"].append(entry)
+            if not tables:
+                return {"study_spaces": []}
+            
+            data = {"study_spaces": []}
+            table = tables[0]
+            rows = table.find_all('tr')[1:]  # Skip header row
 
-        return data
+            for row in rows:
+                cells = row.find_all('td')
+                if len(cells) >= 5:
+                    row_text = [cell.text.strip() for cell in cells]
+                    
+                    building_formatted = row_text[0].replace(' ', '_')
+                    room_formatted = row_text[1].replace(' ', '_')
+                    image_name = f"/images/{building_formatted}_{room_formatted}.jpg"
+                    unique_id = f"{building_formatted}-{room_formatted}"
+                    
+                    entry = {
+                        'id': unique_id,
+                        'Building': row_text[0],
+                        'Room Number': row_text[1],
+                        'Seating Spaces': row_text[2],
+                        'Group/Individual': row_text[3],
+                        'Type of space': row_text[4],
+                        'Image': image_name,
+                    }
+                    data["study_spaces"].append(entry)
+
+            return data
+            
+        except Exception as e:
+            # Simple fallback - return empty data instead of crashing
+            return {"study_spaces": []}
     
 if __name__ == "__main__":
-    for i in range(len(Scrape.data()['study_spaces'])):
-        print(Scrape.data()['study_spaces'][i]['Image'])
+    # Get the scraped data
+    data = Scrape.data()
+    
+    # Save to JSON file
+    with open('../study-spaces-data.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    

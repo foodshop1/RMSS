@@ -1,7 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { div } from 'framer-motion/client';
 
 interface CardProps {
   building: string;
@@ -12,18 +10,51 @@ interface CardProps {
   image: string;
 }
 
-function Card({ building, roomNumber, seatingSpaces, groupOrIndividual, typeOfSpace, image }: CardProps) {
-  const [studySpaces, setStudySpaces] = useState([]);
+export default function Card({
+  building,
+  roomNumber,
+  seatingSpaces,
+  groupOrIndividual,
+  typeOfSpace,
+  image,
+}: CardProps) {
+  return (
+    <motion.div
+      className="card bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+      whileHover={{ scale: 1.02 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+    >
+      <div className="mb-4">
+        <img
+          src={image}
+          alt={`${building} ${roomNumber}`}
+          className="w-full h-48 object-cover rounded-md"
+          onError={(e) => {
+            // Fallback image if the study space image doesn't exist
+            e.currentTarget.src = '/images/placeholder.jpg';
+          }}
+        />
+      </div>
 
-  //fetch data from api
-  useEffect(() => {
-    const fetchStudySpaces = async () => {
-      const response = await fetch('/api/GeneralSpaces');
-      const data = await response.json();
-      console.log(data);
-    };
-    fetchStudySpaces();
-  }, []);
+      <div className="space-y-2">
+        <h3 className="text-xl font-semibold text-gray-800">
+          {building} - {roomNumber}
+        </h3>
 
-  return <div className="card">placeholder</div>;
+        <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+          <div>
+            <span className="font-medium">Seating:</span> {seatingSpaces}
+          </div>
+          <div>
+            <span className="font-medium">Type:</span> {groupOrIndividual}
+          </div>
+        </div>
+
+        <div className="text-sm text-gray-600">
+          <span className="font-medium">Space Type:</span> {typeOfSpace}
+        </div>
+      </div>
+    </motion.div>
+  );
 }

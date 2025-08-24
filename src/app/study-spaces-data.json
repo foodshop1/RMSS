@@ -1,0 +1,337 @@
+{
+  "study_spaces": [
+    {
+      "id": "Arts_and_Administration-AA207",
+      "Building": "Arts and Administration",
+      "Room Number": "AA207",
+      "Seating Spaces": "40",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Classroom",
+      "Image": "/images/Arts_and_Administration_AA207.jpg"
+    },
+    {
+      "id": "Arts_and_Administration-AA208",
+      "Building": "Arts and Administration",
+      "Room Number": "AA208",
+      "Seating Spaces": "40",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Classroom",
+      "Image": "/images/Arts_and_Administration_AA208.jpg"
+    },
+    {
+      "id": "Academic_Resource_Centre-ARC-2",
+      "Building": "Academic Resource Centre",
+      "Room Number": "ARC-2",
+      "Seating Spaces": "28",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels, Tables",
+      "Image": "/images/Academic_Resource_Centre_ARC-2.jpg"
+    },
+    {
+      "id": "Academic_Resource_Centre-ARC-3",
+      "Building": "Academic Resource Centre",
+      "Room Number": "ARC-3",
+      "Seating Spaces": "16",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels, Tables",
+      "Image": "/images/Academic_Resource_Centre_ARC-3.jpg"
+    },
+    {
+      "id": "Academic_Resource_Centre-AC332",
+      "Building": "Academic Resource Centre",
+      "Room Number": "AC332",
+      "Seating Spaces": "25",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Classroom",
+      "Image": "/images/Academic_Resource_Centre_AC332.jpg"
+    },
+    {
+      "id": "Bladen_Wing-Study_Space_(4th_floor)",
+      "Building": "Bladen Wing",
+      "Room Number": "Study Space (4th floor)",
+      "Seating Spaces": "12",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels",
+      "Image": "/images/Bladen_Wing_Study_Space_(4th_floor).jpg"
+    },
+    {
+      "id": "Bladen_Wing-Study_Space_(4th_floor)",
+      "Building": "Bladen Wing",
+      "Room Number": "Study Space (4th floor)",
+      "Seating Spaces": "158",
+      "Group/Individual": "Group",
+      "Type of space": "Group Carrels, Tables, High seating",
+      "Image": "/images/Bladen_Wing_Study_Space_(4th_floor).jpg"
+    },
+    {
+      "id": "Environmental_Science-Study_Room_(2nd_floor)",
+      "Building": "Environmental Science",
+      "Room Number": "Study Room (2nd floor)",
+      "Seating Spaces": "21",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels",
+      "Image": "/images/Environmental_Science_Study_Room_(2nd_floor).jpg"
+    },
+    {
+      "id": "Highland_Hall-Level_1L",
+      "Building": "Highland Hall",
+      "Room Number": "Level 1L",
+      "Seating Spaces": "62",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels",
+      "Image": "/images/Highland_Hall_Level_1L.jpg"
+    },
+    {
+      "id": "Highland_Hall-Level_1U",
+      "Building": "Highland Hall",
+      "Room Number": "Level 1U",
+      "Seating Spaces": "63",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels",
+      "Image": "/images/Highland_Hall_Level_1U.jpg"
+    },
+    {
+      "id": "Highland_Hall-Level_1U",
+      "Building": "Highland Hall",
+      "Room Number": "Level 1U",
+      "Seating Spaces": "20",
+      "Group/Individual": "Individual",
+      "Type of space": "Tables",
+      "Image": "/images/Highland_Hall_Level_1U.jpg"
+    },
+    {
+      "id": "Humanities_Wing-HW308",
+      "Building": "Humanities Wing",
+      "Room Number": "HW308",
+      "Seating Spaces": "50",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Classroom",
+      "Image": "/images/Humanities_Wing_HW308.jpg"
+    },
+    {
+      "id": "Humanities_Wing-HW402",
+      "Building": "Humanities Wing",
+      "Room Number": "HW402",
+      "Seating Spaces": "36",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Classroom",
+      "Image": "/images/Humanities_Wing_HW402.jpg"
+    },
+    {
+      "id": "Humanities_Wing-Study_Carrels",
+      "Building": "Humanities Wing",
+      "Room Number": "Study Carrels",
+      "Seating Spaces": "68",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels",
+      "Image": "/images/Humanities_Wing_Study_Carrels.jpg"
+    },
+    {
+      "id": "Instructional_Centre-IC200A_Study_Room",
+      "Building": "Instructional Centre",
+      "Room Number": "IC200A Study Room",
+      "Seating Spaces": "10",
+      "Group/Individual": "Individual",
+      "Type of space": "Tables, Couches",
+      "Image": "/images/Instructional_Centre_IC200A_Study_Room.jpg"
+    },
+    {
+      "id": "Instructional_Centre-IC212A_Study_Room",
+      "Building": "Instructional Centre",
+      "Room Number": "IC212A Study Room",
+      "Seating Spaces": "10",
+      "Group/Individual": "Individual",
+      "Type of space": "Tables, Couches",
+      "Image": "/images/Instructional_Centre_IC212A_Study_Room.jpg"
+    },
+    {
+      "id": "Instructional_Centre-IC326",
+      "Building": "Instructional Centre",
+      "Room Number": "IC326",
+      "Seating Spaces": "35",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Classroom",
+      "Image": "/images/Instructional_Centre_IC326.jpg"
+    },
+    {
+      "id": "Library-Small_Group_Study_Rooms",
+      "Building": "Library",
+      "Room Number": "Small Group Study Rooms",
+      "Seating Spaces": "24",
+      "Group/Individual": "Group",
+      "Type of space": "Tables",
+      "Image": "/images/Library_Small_Group_Study_Rooms.jpg"
+    },
+    {
+      "id": "Library-Large_Group_Study_Rooms",
+      "Building": "Library",
+      "Room Number": "Large Group Study Rooms",
+      "Seating Spaces": "24",
+      "Group/Individual": "Group",
+      "Type of space": "Tables",
+      "Image": "/images/Library_Large_Group_Study_Rooms.jpg"
+    },
+    {
+      "id": "Library-Quiet_Study_Room_(AC338)",
+      "Building": "Library",
+      "Room Number": "Quiet Study Room (AC338)",
+      "Seating Spaces": "71",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels",
+      "Image": "/images/Library_Quiet_Study_Room_(AC338).jpg"
+    },
+    {
+      "id": "Library-Upper_Level",
+      "Building": "Library",
+      "Room Number": "Upper Level",
+      "Seating Spaces": "217",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels, Tables",
+      "Image": "/images/Library_Upper_Level.jpg"
+    },
+    {
+      "id": "Library-Lower_Level",
+      "Building": "Library",
+      "Room Number": "Lower Level",
+      "Seating Spaces": "87",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels, Tables",
+      "Image": "/images/Library_Lower_Level.jpg"
+    },
+    {
+      "id": "Library-Lower_Level",
+      "Building": "Library",
+      "Room Number": "Lower Level",
+      "Seating Spaces": "3",
+      "Group/Individual": "Individual",
+      "Type of space": "Media Stations",
+      "Image": "/images/Library_Lower_Level.jpg"
+    },
+    {
+      "id": "Library-Lower_Level",
+      "Building": "Library",
+      "Room Number": "Lower Level",
+      "Seating Spaces": "78",
+      "Group/Individual": "Individual",
+      "Type of space": "Computer Workstations",
+      "Image": "/images/Library_Lower_Level.jpg"
+    },
+    {
+      "id": "Library-Lower_Level",
+      "Building": "Library",
+      "Room Number": "Lower Level",
+      "Seating Spaces": "55",
+      "Group/Individual": "Individual",
+      "Type of space": "Lounge Seating (Reading Room), 2 stationary bike stations",
+      "Image": "/images/Library_Lower_Level.jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-Study_Space_(1st_Floor)",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "Study Space (1st Floor)",
+      "Seating Spaces": "80",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Study Carrels, Lounge Seating, Round Tables",
+      "Image": "/images/Sam_Ibrahim_Building_Study_Space_(1st_Floor).jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-Study_Space_(2nd_Floor)",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "Study Space (2nd Floor)",
+      "Seating Spaces": "25",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Study Carrels, Round Tables",
+      "Image": "/images/Sam_Ibrahim_Building_Study_Space_(2nd_Floor).jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-IA2050",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "IA2050",
+      "Seating Spaces": "60",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Active Learning Space",
+      "Image": "/images/Sam_Ibrahim_Building_IA2050.jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-IA2060",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "IA2060",
+      "Seating Spaces": "36",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Active Learning Space",
+      "Image": "/images/Sam_Ibrahim_Building_IA2060.jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-IA2110",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "IA2110",
+      "Seating Spaces": "24",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Seminar",
+      "Image": "/images/Sam_Ibrahim_Building_IA2110.jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-IA2120",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "IA2120",
+      "Seating Spaces": "36",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Collaborative Space",
+      "Image": "/images/Sam_Ibrahim_Building_IA2120.jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-IA2170",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "IA2170",
+      "Seating Spaces": "48",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Active Learning Space",
+      "Image": "/images/Sam_Ibrahim_Building_IA2170.jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-Study_Space_(3rd_Floor)",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "Study Space (3rd Floor)",
+      "Seating Spaces": "75",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Study Carrels, Lounge Seating, Round Tables",
+      "Image": "/images/Sam_Ibrahim_Building_Study_Space_(3rd_Floor).jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-Study_Space_(4th_Floor)",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "Study Space (4th Floor)",
+      "Seating Spaces": "10",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels, Lounge Seating",
+      "Image": "/images/Sam_Ibrahim_Building_Study_Space_(4th_Floor).jpg"
+    },
+    {
+      "id": "Sam_Ibrahim_Building-Study_Space_(5th_Floor)",
+      "Building": "Sam Ibrahim Building",
+      "Room Number": "Study Space (5th Floor)",
+      "Seating Spaces": "10",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels, Lounge Seating",
+      "Image": "/images/Sam_Ibrahim_Building_Study_Space_(5th_Floor).jpg"
+    },
+    {
+      "id": "Science_Wing-Corridor",
+      "Building": "Science Wing",
+      "Room Number": "Corridor",
+      "Seating Spaces": "140",
+      "Group/Individual": "Individual",
+      "Type of space": "Study Carrels",
+      "Image": "/images/Science_Wing_Corridor.jpg"
+    },
+    {
+      "id": "Social_Sciences-KW264",
+      "Building": "Social Sciences",
+      "Room Number": "KW264",
+      "Seating Spaces": "30",
+      "Group/Individual": "Individual & Group",
+      "Type of space": "Classroom",
+      "Image": "/images/Social_Sciences_KW264.jpg"
+    }
+  ]
+}
